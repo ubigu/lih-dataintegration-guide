@@ -67,5 +67,10 @@ def xml_to_gpkg(xml_data, output_gpkg):
 
     print(f"GeoPackage {output_gpkg} created successfully.")
 
+'''
+If you want to save the result .gpkg to you file explorer then run following code 
+
 # Create the GeoPackage from the XML data
 xml_to_gpkg(xml_data, "points_of_interest.gpkg")
+
+'''

@@ -1,6 +1,35 @@
+from bs4 import BeautifulSoup
 import geopandas as gpd
 from shapely.geometry import Point
-from bs4 import BeautifulSoup
+
+'''
+This example has xml text in the file.
+
+Usually xml is a file which needs to be red in.
+
+Example:
+def xml_to_gpkg(xml_file_path, output_gpkg):
+    # Read the XML file
+    with open(xml_file_path, 'r') as file:
+        xml_data = file.read()
+    
+    # Parse the XML data using BeautifulSoup
+    soup = BeautifulSoup(xml_data, "xml")
+
+For html there is a need to have the url address.
+
+Example:
+website_url = 'http://example.com/points_of_interest.html'  # Replace with the actual URL
+
+def html_to_gpkg(url, output_gpkg):
+    # Fetch the HTML content from the website
+    response = requests.get(url)
+    html_data = response.text
+    
+    # Parse the HTML data using BeautifulSoup
+    soup = BeautifulSoup(html_data, "html.parser")
+
+'''
 
 # Sample XML data with additional, non-useful values
 xml_data = """
@@ -67,10 +96,6 @@ def xml_to_gpkg(xml_data, output_gpkg):
 
     print(f"GeoPackage {output_gpkg} created successfully.")
 
-'''
-If you want to save the result .gpkg to you file explorer then run following code 
-
+#Define the path where you want to save your file
 # Create the GeoPackage from the XML data
 xml_to_gpkg(xml_data, "points_of_interest.gpkg")
-
-'''

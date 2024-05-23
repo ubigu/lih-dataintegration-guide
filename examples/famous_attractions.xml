@@ -1,0 +1,32 @@
+<geospatial_data>
+    <point_of_interest>
+        <name>Eiffel Tower</name>
+        <latitude>48.8584</latitude>
+        <longitude>2.2945</longitude>
+        <spatial_reference>EPSG:4326</spatial_reference>
+        <additional_info>
+            <creator>Gustave Eiffel</creator>
+            <year_built>1889</year_built>
+        </additional_info>
+    </point_of_interest>
+    <point_of_interest>
+        <name>Statue of Liberty</name>
+        <latitude>40.6892</latitude>
+        <longitude>-74.0445</longitude>
+        <spatial_reference>EPSG:4326</spatial_reference>
+        <additional_info>
+            <creator>Frédéric Auguste Bartholdi</creator>
+            <year_built>1886</year_built>
+        </additional_info>
+    </point_of_interest>
+    <point_of_interest>
+        <name>Sydney Opera House</name>
+        <latitude>-33.8568</latitude>
+        <longitude>151.2153</longitude>
+        <spatial_reference>EPSG:4326</spatial_reference>
+        <additional_info>
+            <creator>Jørn Utzon</creator>
+            <year_built>1973</year_built>
+        </additional_info>
+    </point_of_interest>
+</geospatial_data>

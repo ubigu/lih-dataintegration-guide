@@ -13,7 +13,7 @@ else:
     num_bands = dataset.RasterCount
     print("Number of bands:", num_bands)
 
-    # Get the raster size (width and height)
+    # Get the raster size in pixels(width and height)
     width = dataset.RasterXSize
     height = dataset.RasterYSize
     print("Raster size (width x height):", width, "x", height)

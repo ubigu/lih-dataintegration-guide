@@ -1,26 +1,28 @@
 from osgeo import ogr
 
 # Path to the GeoPackage file
-gpkg_file = "path/to/your/file.gpkg"
+vector_file = "path/to/your/file.gpkg"
 
 # Open the GeoPackage
-driver = ogr.GetDriverByName("GPKG")
-dataset = driver.Open(gpkg_file)
+extension = "your filetype"     #Replace with the correct file extension ("GPKG", "ESRI Shapefile", ect.)
+driver = ogr.GetDriverByName(extension)
+dataset = driver.Open(vector_file)
 
 if dataset is None:
-    print("Failed to open the GeoPackage.")
+    print("Failed to open the file.")
 else:
     # Get the layer from the GeoPackage
     layer = dataset.GetLayer()
 
-    # Loop through each feature in the layer and print its attributes
-    print("Features in the GeoPackage:")
-    for feature in layer:
-        # Get the attributes of the feature
-        attributes = feature.items()
+    # Get the layer's schema
+    layer_defn = layer.GetLayerDefn()
 
-        # Print the attributes
-        print(attributes)
+    # Get column names
+    column_names = [layer_defn.GetFieldDefn(i).GetName() for i in range(layer_defn.GetFieldCount())]
+
+    # Print column names
+    print("Column names in the file:")
+    print(column_names)
 
     # Close the dataset
     dataset = None

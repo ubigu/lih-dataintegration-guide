@@ -1,7 +1,7 @@
 from osgeo import ogr
 
 # Path to the GeoPackage file
-vector_file = "path/to/your/file.gpkg"
+vector_file = "path/to/your/file"
 
 # Open the GeoPackage
 extension = "your filetype"     #Replace with the correct file extension ("GPKG", "ESRI Shapefile", ect.)

@@ -8,6 +8,8 @@ This example has xml text in the file.
 Usually xml is a file which needs to be red in.
 
 Example:
+xml_file_path = 'C:\Users\You\your_xml_file.xml' # Replace with the actual filepath
+
 def xml_to_gpkg(xml_file_path, output_gpkg):
     # Read the XML file
     with open(xml_file_path, 'r') as file:

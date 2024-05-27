@@ -14,10 +14,10 @@ import mysql.connector
 
 # Establish a connection to the MySQL database
 connection = mysql.connector.connect(
-    database="database_name"  # Your database name
     host="localhost",  # Your host
     user="username",   # Your username
     password="password",  # Your password
+    database="database_name"  # Your database name
 )
 
 # Create a cursor object to interact with the database

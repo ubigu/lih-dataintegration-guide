@@ -1,3 +1,15 @@
+'''
+This is an example where geopandas and pandas are
+used to merge data.
+
+The code prints the result dataframe.
+
+Note! In this example the sample data is created within the code.
+If you want to replace the data with vector files, then replace
+non_geospatial_data and geospatial_data with file path to your data.
+
+'''
+
 import pandas as pd
 import geopandas as gpd
 

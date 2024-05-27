@@ -1,3 +1,18 @@
+'''
+This is an example where gdal is used to get some basic
+information about raster file.
+
+The information is printed out in output console.
+
+The printed information is about number of bands,
+raster size in pixels, geotransform parameters
+and spatial reference system.
+
+Note! Remember to replace the raster_path with the
+path to your raster file.
+
+'''
+
 from osgeo import gdal
 
 # Path to the raster file

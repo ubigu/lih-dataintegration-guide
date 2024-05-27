@@ -1,3 +1,16 @@
+'''
+This is an example where ogr is used to get some basic
+information about vector file.
+
+The information is printed out in output console.
+
+The code prints the names of all columns from the vector file. 
+
+Note! Remember to replace the vector_path with the
+path to your vector file.
+
+'''
+
 from osgeo import ogr
 
 # Path to the GeoPackage file

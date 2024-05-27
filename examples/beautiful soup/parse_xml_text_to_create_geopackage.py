@@ -1,31 +1,17 @@
 '''
-This example has xml text in the file.
+This code parses XML by using beautiful soup.
+The parsed file is then saved as geopackage by using geopandas.
 
-Usually xml is a file which needs to be red in.
+This code only parses latitude, longitude and name from the XML.
+Latitude and longitude are essential for geopackage.
 
-Example:
-xml_file_path = 'C:\Users\You\your_xml_file.xml' # Replace with the actual filepath
+You can see that the xml text has some other information as
+creator and year_built. This information is not wanted to
+geopackage so with beautiful soup you can decide what kind of
+information you want to use.
 
-def xml_to_gpkg(xml_file_path, output_gpkg):
-    # Read the XML file
-    with open(xml_file_path, 'r') as file:
-        xml_data = file.read()
-    
-    # Parse the XML data using BeautifulSoup
-    soup = BeautifulSoup(xml_data, "xml")
-
-For html there is a need to have the url address.
-
-Example:
-website_url = 'http://example.com/points_of_interest.html'  # Replace with the actual URL
-
-def html_to_gpkg(url, output_gpkg):
-    # Fetch the HTML content from the website
-    response = requests.get(url)
-    html_data = response.text
-    
-    # Parse the HTML data using BeautifulSoup
-    soup = BeautifulSoup(html_data, "html.parser")
+Note! Remember to define where and with what name you want to output
+geopackage to be saved.
 
 '''
 

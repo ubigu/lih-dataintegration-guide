@@ -7,7 +7,6 @@ WFS layers. Then user is able to select the desired
 layer. After selection the available columns are
 printed on the output console.
 
-
 Note! Remember to replace the url with the address
 to your WFS API.
 

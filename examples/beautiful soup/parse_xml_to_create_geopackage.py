@@ -1,7 +1,3 @@
-from bs4 import BeautifulSoup
-import geopandas as gpd
-from shapely.geometry import Point
-
 '''
 This example has xml text in the file.
 
@@ -32,6 +28,10 @@ def html_to_gpkg(url, output_gpkg):
     soup = BeautifulSoup(html_data, "html.parser")
 
 '''
+
+from bs4 import BeautifulSoup
+import geopandas as gpd
+from shapely.geometry import Point
 
 # Sample XML data with additional, non-useful values
 xml_data = """

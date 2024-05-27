@@ -1,3 +1,16 @@
+'''
+This is an example where we connect to
+PostgreSQL database by using psycopg2.
+
+This example selects all the data in one table
+and prints it.
+
+Note! You have to define dbname, user,
+password, host, post and the desired table from 
+the database in order to use this code.
+
+'''
+
 import psycopg2
 
 # Connect to your PostgreSQL database

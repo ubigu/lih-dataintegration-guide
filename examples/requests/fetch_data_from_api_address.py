@@ -1,3 +1,16 @@
+'''
+This is an example where requests are used to
+fecth WFS data from url address.
+
+This code prints to the output console available
+columns from the wfs layer.
+
+
+Note! Remember to replace the url with the address
+to your WFS API.
+
+'''
+
 import requests
 import geopandas as gpd
 

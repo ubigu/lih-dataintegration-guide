@@ -1,3 +1,15 @@
+'''
+This is an example where we connect to
+database and add data by using sqlalchemy.
+
+This example prints the selected class after
+altering the data.
+
+Note! You have to create an engine
+in order to use this code.
+
+'''
+
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker

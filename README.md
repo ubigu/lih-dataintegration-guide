@@ -9,4 +9,6 @@ Test data can be found for many functions, but in the database code examples, th
 
 If user wants to get real existing data for testing there are several sources. National Land Survey of Finland has serveral different datasets available under open data Attribution CC 4.0 license.
 
-For API NLS Finland has 
+For API code testing there are variety of url addresses available for eaxmple from NLS Finland. Some of them requires login and nany of them are under open data Attribution CC 4.0 license.
+
+Remember that when ever using open data Attribution CC 4.0 license there is need to mention the origin of the data if it is published.

@@ -2,8 +2,8 @@
 This is an example where we connect to
 PostgreSQL database by using psycopg2.
 
-This example selects all the data in one table
-and prints it.
+This example selects all the data from
+defined table and prints it.
 
 Note! You have to define dbname, user,
 password, host, post and the desired table from 

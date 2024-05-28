@@ -1,9 +1,9 @@
 '''
 This is an example where we connect to
-PostgreSQL database by using psycopg2.
+PostgreSQL database by using my-sql-connector.
 
-This example selects all the data in one table
-and prints it.
+This example selects all the data from one defined
+table and prints it.
 
 Note! You have to define database, host, user and
 password.

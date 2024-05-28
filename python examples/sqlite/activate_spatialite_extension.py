@@ -1,12 +1,20 @@
 '''
+This code creates SQlite database.
 
+Then the code enables spatialite extension.
+
+After that table with spatial data is created.
+You can add your own data to the code at this point.
+
+Then the created data is queried and the results
+are printed to the output console.
 
 '''
 
 
 import sqlite3
 
-# Connect to a SQLite database (or create it if it doesn't exist)
+# Create a SQLite database
 conn = sqlite3.connect('example.db')
 
 # Enable spatialite extension

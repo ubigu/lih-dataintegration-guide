@@ -1,5 +1,5 @@
 '''
-This is an example where requests are used to
+This is an example where requests is used to
 fecth WFS data from url address.
 
 This code prints to the output console available
@@ -8,7 +8,7 @@ layer. After selection the available columns are
 printed on the output console.
 
 Note! Remember to replace the url with the address
-to your WFS API.
+to your url address.
 
 '''
 

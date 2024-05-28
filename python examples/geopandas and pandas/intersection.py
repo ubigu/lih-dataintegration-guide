@@ -1,5 +1,5 @@
 '''
-This is an example where geopandas is to perform
+This is an example where geopandas is used to perform
 intersection operation.
 
 The code prints the result intersection.
